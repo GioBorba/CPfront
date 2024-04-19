@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
  
@@ -16,9 +16,11 @@ const Cadastro = () => {
                 email: email,
                 passwordHash: password
             });
-            console.log(response.data); 
+            console.log(response.data);
+            alert('Cadastro bem-sucedido! Você pode fazer login agora.');
         } catch (error) {
             console.error('Erro ao cadastrar:', error);
+            alert('Erro ao cadastrar. Por favor, tente novamente.'); 
         }
     };
  

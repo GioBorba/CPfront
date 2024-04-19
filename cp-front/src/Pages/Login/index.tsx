@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -15,8 +15,10 @@ const Login = () => {
                 password
             });
             console.log(response.data);
+            alert('Login bem-sucedido!'); 
         } catch (error) {
             console.error('Erro ao fazer login:', error);
+            alert('Erro ao fazer login. Verifique suas credenciais e tente novamente.'); 
         }
     };
 
