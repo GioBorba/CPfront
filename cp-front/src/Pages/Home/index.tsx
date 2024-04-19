@@ -17,14 +17,16 @@ const Home = () => {
       const data: UserData[] = response.data;
 
       const usersDiv = document.querySelector(".users");
-      usersDiv!.innerHTML = ""; // Limpar o conteúdo anterior
+      usersDiv!.innerHTML = ""; 
+      
 
       data.forEach((user: UserData) => {
         const userDiv = document.createElement("div");
+        userDiv.className = "pastel"
         userDiv.innerHTML = `
-          <p>Nome: ${user.username}</p>
-          <p>Email: ${user.email}</p>
-          <p>PasswordHash: ${user.passwordHash}</p>
+          <p><b>Nome:</b> ${user.username}</p>
+          <p><b>Email:</b> ${user.email}</p>
+          <p><b>PasswordHash:</b> ${user.passwordHash}</p>
         `;
         usersDiv!.appendChild(userDiv);
       });
