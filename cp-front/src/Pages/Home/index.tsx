@@ -34,7 +34,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="all">
       <h1 className="titulo">Checkpoint</h1>
       <div className="corpo">
         <Link to="/login">
@@ -45,7 +45,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <button onClick={getUsers}>Mostrar usuários</button>
+      <button className="button-user" onClick={getUsers}>Mostrar usuários</button>
 
       <div className="users"></div>
     </div>
