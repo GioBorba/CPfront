@@ -16,7 +16,7 @@ const Cadastro = () => {
                 email: email,
                 passwordHash: password
             });
-            console.log(response.data); // faça algo com a resposta, como redirecionar o usuário para a página de login
+            console.log(response.data); 
         } catch (error) {
             console.error('Erro ao cadastrar:', error);
         }
