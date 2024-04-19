@@ -1,0 +1,31 @@
+.button {
+    padding: 18px;
+    color: #f1b;
+    border: #f1b 5px solid;
+    margin: 45px;
+    width: 12vw;
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    box-shadow: inset 0 0 2px 0 #f1b, 0 0 40px 0 #f1b;
+    font-size: larger;
+    font-family: cursive;
+}
+
+
+.button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(157, 19, 118);
+    transition: 0.8s ease-in-out;
+}
+
+.titulo {
+    text-align: center;
+    color: #f1b;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    letter-spacing: 1.4px;
+}
